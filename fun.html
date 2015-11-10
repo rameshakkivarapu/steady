@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="link.js"></script>
+</head>
+<body ng-app="app" ng-controller="functrl">
+<table border="1">
+<tr ng-repeat="x in names">
+<td>{{x.Name}}</td>
+<td>{{x.Address}}</td>
+<td><a ng-click="GetEmployeee(x.Id);">Edit</a></td>
+</tr>
+</table>
+</body>
+</html>
